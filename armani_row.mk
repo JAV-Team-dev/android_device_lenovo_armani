@@ -16,18 +16,18 @@
 $(call inherit-product, build/target/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit armani vendor setup
-$(call inherit-product-if-exists, vendor/lenovo/armani/armani-vendor.mk)
+# Inherit armani_row vendor setup
+$(call inherit-product-if-exists, vendor/lenovo/armani_row/armani_row-vendor.mk)
 
 # Path to overlay files
-DEVICE_PACKAGE_OVERLAYS += device/lenovo/armani/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lenovo/armani_row/overlay
 
 # Files needed for recovery image
 PRODUCT_COPY_FILES += \
-    device/lenovo/armani/recovery/sbin/rmt_storage_recovery:/recovery/root/sbin/rmt_storage_recovery \
-    device/lenovo/armani/recovery/sbin/charger:/recovery/root/sbin/charger \
-    device/lenovo/armani/recovery/sbin/charge.sh:/recovery/root/sbin/charge.sh \
-    device/lenovo/armani/recovery/umountusb.sh:root/umountusb.sh
+    device/lenovo/armani_row/recovery/sbin/rmt_storage_recovery:/recovery/root/sbin/rmt_storage_recovery \
+    device/lenovo/armani_row/recovery/sbin/charger:/recovery/root/sbin/charger \
+    device/lenovo/armani_row/recovery/sbin/charge.sh:/recovery/root/sbin/charge.sh \
+    device/lenovo/armani_row/recovery/umountusb.sh:root/umountusb.sh
 
 PRODUCT_COPY_FILES += \
-    device/lenovo/armani/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/lenovo/armani_row/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab

@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/armani.mk
+    $(LOCAL_DIR)/armani_row.mk

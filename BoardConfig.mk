@@ -53,16 +53,16 @@ BOARD_DATA_FILESYSTEM_OPTIONS := rw
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_PAGE_SIZE := 4096
-TARGET_PREBUILT_KERNEL := device/lenovo/armani/kernel
+TARGET_PREBUILT_KERNEL := device/lenovo/armani_row/kernel
 
 # USB Mounting
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_PREBUILT_RECOVERY_KERNEL := device/lenovo/armani/recovery/recovery-kernel
-TARGET_RECOVERY_INITRC := device/lenovo/armani/recovery/twrp-init.rc
-TARGET_RECOVERY_FSTAB := device/lenovo/armani/fstab.qcom
+TARGET_PREBUILT_RECOVERY_KERNEL := device/lenovo/armani_row/recovery/recovery-kernel
+TARGET_RECOVERY_INITRC := device/lenovo/armani_row/recovery/twrp-init.rc
+TARGET_RECOVERY_FSTAB := device/lenovo/armani_row/fstab.qcom
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
@@ -86,7 +86,7 @@ TW_USE_TOOLBOX := true
 TW_TARGET_USES_QCOM_BSP := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
 BOARD_USE_CUSTOM_RECOVERY_FONT:= \"roboto_10x18.h\"
-TW_BOARD_CUSTOM_GRAPHICS := ../../../device/lenovo/armani/recovery/twrp-graphics.c
+TW_BOARD_CUSTOM_GRAPHICS := ../../../device/lenovo/armani_row/recovery/twrp-graphics.c
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.590337/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
